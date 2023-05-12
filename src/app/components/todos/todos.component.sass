@@ -1,0 +1,48 @@
+.todo
+    display: flex
+    padding: 10px 15px
+    background-color: #FFF
+    border-bottom: 1px solid #DDD
+
+    &:nth-child(even)
+        background-color: #EEE
+
+    &:last-of-type
+        border-bottom: 0
+
+    & .id
+        flex: 1 1 50px
+
+    & .content
+        flex: 1 1 100%
+
+    &.done .content
+        text-decoration: line-through
+
+    &-input
+        display: block
+        width: 100%
+        padding: 10px 15px
+        appearance: none
+        border: none
+        background-color: #F3F3F3
+        margin-top: 15px
+        font-size: 20px
+        outline: none
+
+    &-submit
+        display: block
+        width: 100%
+        max-width: 200px
+        appearance: none
+        border: none
+        outline: none
+        background: none
+
+        background-color: #FE4880
+        color: #FFF
+        margin: 15px auto
+
+        padding: 10px 15px
+        font-size: 18px
+        font-weight: 700
